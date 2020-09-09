@@ -1,0 +1,75 @@
+										2020__realDonaldTrump data frame
+			---- Starting the pipeline built for >>> clean_text <<< with import condition True ----
+
+	1. Cleaning the input for Null 2933 to 0
+
+	2. Attaching DocumentAssembler Transformer to the pipeline
+
+	3. Attaching Tokenizer Annotator to the pipeline
+
+	4. Attaching Normalizer Annotator to the pipeline
+lemma_antbnc download started this may take some time.
+Approximate size to download 907.6 KB
+[OK!]
+
+	5. Attaching LemmatizerModel Annotator to the pipeline
+
+	6. nltk stop-words found
+
+	7. Attaching StopWordsCleaner Annotator to the pipeline
+
+	8. Attaching NGramGenerator Annotator to the pipeline
+pos_anc download started this may take some time.
+Approximate size to download 4.3 MB
+[OK!]
+
+	9. Attaching PerceptronModel Annotator to the pipeline
+
+	10. Attaching Finisher Transformer to the pipeline
+
+			 ---- Pipeline Built Successfully ----
+
+			 ---- Pipeline Fitted Successfully ----
+
+	Data Concatination done - uni--ngrams
+
+			 ---- Loading the Pre-trained Pipeline  analyze_sentimentdl_use_twitter----
+analyze_sentimentdl_use_twitter download started this may take some time.
+Approx size to download 928.3 MB
+[OK!]
+
+			 ---- Sentiments Fetched Successfully ----
+
+
+
+
+$$$ Indexing done for the Compiled Result
+
+$$$ Joining the final resutls with original dataframe
+
+Original IP=2933 
+NonNull Index=2933 
+Null_Clean=2933 
+Original OP=2933
++---+--------------------+---------------+--------------------+--------------+-------------+--------------------+
+|_c0|              str_id|     created_at|           full_text|favorite_count|retweet_count|          clean_text|
++---+--------------------+---------------+--------------------+--------------+-------------+--------------------+
+|  0|id_12931638182820...|8/11/2020 12:34|Big Stock Market ...|        141791|        22739|big stock market ...|
+|  1|id_12931637041886...|8/11/2020 12:33|More Testing, whi...|         88026|        19029|more testing whic...|
+|  2|id_12931514540693...|8/11/2020 11:45|..so called Ameri...|         79032|        18000| so called americ...|
+|  3|id_12931514530293...|8/11/2020 11:45|John Bolton, one ...|         83961|        19648|john bolton one o...|
++---+--------------------+---------------+--------------------+--------------+-------------+--------------------+
+only showing top 4 rows
+
+None
+
+$$$ Spark Created
+
+$$$ Pandas Created
+                   str_id       created_at  ... text_length sentiment_score
+0  id_1293163818282094594  8/11/2020 12:34  ...           4        negative
+1  id_1293163704188645385  8/11/2020 12:33  ...          22        negative
+2  id_1293151454069391360  8/11/2020 11:45  ...          29        positive
+3  id_1293151453029322753  8/11/2020 11:45  ...          27        negative
+
+[4 rows x 8 columns]

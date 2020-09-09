@@ -1,0 +1,105 @@
+##########################################################################################
+#####################################################################################
+################################################################################
+	Starting the session on 2020-09-06 11:22:32.530515
+################################################################################
+#####################################################################################
+##########################################################################################
+
+
+		--- 1. Psycopg loaded. Local Host: localhost entered with Port 5432. Database tweeter_election2020 Accessed ---
+		--- 2. NLP Libraries loaded ---
+		--- 3. Tweeter API keys Set ---
+		--- 4. Clean Master Function Loaded ---
+
+
+######################################################################
+	--- Updating the Database for  2020-09-05 to 2020-09-06
+		--- 1.1. Found 15 Official new Tweets for `The Doland`, updated it in Database
+		--- 1.2. Found 3 Official new Tweets for `The JoeBiden`, updated it in Database
+		--- 2.1. Found 10000 General new Tweets for `The Doland`, updated it in Database
+				 --- $$$ Sleeping till: 11:45:50.086963
+		--- 2.2. Found 10000 General new Tweets for `The JoeBiden`, updated it in Database
+######################################################################
+	--- Updating the Database for  2020-09-05 to 2020-09-06
+######################################################################
+	--- Loading Sheet 1 `The Doland's File` 2020-09-06 11:54:01.997025
+	--- Loadaded Sheet 1.FRTS `The Doland's File` 2020-09-06 11:54:23.063404
+##################################################
+######################################################################
+	--- Loading Sheet 2 `The Biden's File` 2020-09-06 11:54:23.064613
+	--- Loadaded Sheet 2 `The Biden's File` 2020-09-06 11:54:29.082078
+############################################################
+######################################################################
+		--- 1. Found SparkNLP 2.5.5 Locally
+		--- 2. SparkNLP Annotators,Transformers Loaded
+		--- 3. Found Spark 2.4.4 Locally
+		--- 4. ML Pipelines,CountVectorizer, LDA  Loaded
+		--- 5. SQL & Spark Context Loaded
+############################################################
+######################################################################
+######################################################################
+		 Starting the LDA_Pipeline Built: 2020-09-06 11:55:00.778050
+
+
+	 --- 1. Converted Input Data to Spark DF
+
+	 --- 2.1. Annotator 	DocumentAssembler loaded
+	 --- 2.2. Annotator 	Tokenizer loaded
+	 --- 2.3. Annotator 	Normalizer loaded
+	 --- 2.4. Annotator 	StopWordsCleaner loaded
+	 --- 2.5. Transformer 	Finisher loaded
+
+	 --- 3. Full Pipeline Built
+
+	 --- 4. Pipeline Fitted on full_text
+
+	 --- 5. Tokens made and CV Model transformation done
+
+	 --- 6. LDA Model Fitted with lower bound on the log likelihood of the entire corpus: -749710.4932156687 & upper bound on perplexity: 6.010040589176697
+
+		 Finished the LDA_Pipeline Built: 2020-09-06 11:59:42.464057
+
+
+##################################################
+##############################
+		 Starting the LDA_Pipeline Built: 2020-09-06 11:59:42.510108
+
+
+	 --- 1. Converted Input Data to Spark DF
+
+	 --- 2.1. Annotator 	DocumentAssembler loaded
+	 --- 2.2. Annotator 	Tokenizer loaded
+	 --- 2.3. Annotator 	Normalizer loaded
+	 --- 2.4. Annotator 	StopWordsCleaner loaded
+	 --- 2.5. Transformer 	Finisher loaded
+
+	 --- 3. Full Pipeline Built
+
+	 --- 4. Pipeline Fitted on full_text
+
+	 --- 5. Tokens made and CV Model transformation done
+
+	 --- 6. LDA Model Fitted with lower bound on the log likelihood of the entire corpus: -306322.4187500953 & upper bound on perplexity: 5.975157389889891
+
+		 Finished the LDA_Pipeline Built: 2020-09-06 12:03:16.600271
+
+
+	--- Loadaded LDA Sheet 3 data 2020-09-06 12:03:16.635198
+############################################################
+######################################################################
+	--- Loading Sheet 4 data 2020-09-06 12:03:16.637837
+	--- Loadaded Sheet 4 data 2020-09-06 12:11:40.777450
+############################################################
+######################################################################
+	--- Loading Sheet 5 Meta Data 2020-09-06 12:11:40.779264
+	--- Loadaded Sheet 5 Meta Data 2020-09-06 12:11:41.205441
+############################################################
+	--- Loading Sheet 6 Top 3 Data 2020-09-06 12:11:41.207725
+######################################################################
+	--- Loadaded Sheet 6 Top 3 Data 2020-09-06 12:11:46.555447
+############################################################
+[1;32;20m		>>>>>>>>>  Local Final Data Updated: T_Master_New 2020-09-06 12:15:24.183685 <<<<<<<<<
+
+
+[1;32;20m		>>>>>>>>>  Server Final Data Updated: T_Master_New.PostgreSQL 2020-09-06 12:19:08.036475 <<<<<<<<<
